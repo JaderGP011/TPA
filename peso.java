@@ -1,4 +1,4 @@
-package lacoRepeticão;
+
 import java.util.Scanner;
 public class peso {
 	public static void main(String[] args) {
@@ -7,9 +7,9 @@ public class peso {
 		int alt, resp;
 		double peso, pesoId;// peso: peso informado, pesoId: peso Ideal
 		do {
-			System.out.println("Seu sexo é masculino ou feminino?");
+			System.out.println("Seu sexo ï¿½ masculino ou feminino?");
 			sexo = ler.next();
-			System.out.println("Quanto você pesa?");
+			System.out.println("Quanto vocï¿½ pesa?");
 			peso = ler.nextDouble();
 			System.out.println("qual a sua altura?");
 			alt = ler.nextInt();
@@ -18,18 +18,19 @@ public class peso {
 			    pesoId = 52 + (0.75 * (alt -152.4));
 			    System.out.printf("Seu peso ideal deve ser: %.2f\\n" + " " + pesoId);
 			    if (peso > pesoId *2) {
-					System.out.println("Recomendo que procure um médico especializado");
+					System.out.println("Recomendo que procure um mï¿½dico especializado");
 				}
 			} else if (sexo.equalsIgnoreCase("feminino")) {
 			    pesoId  = 52 + (0.67 * (alt - 152.4));
 			    System.out.printf("Seu peso ideal deve ser: %.2f\n", pesoId);
 			    if (peso > pesoId *2) {
-					System.out.println("Recomendo que procure um médico especializado");
+					System.out.println("Recomendo que procure um mï¿½dico especializado");
 				}
 			}
 			
-			System.out.println("Deseja continuar? 1 = sim 2 = não");
+			System.out.println("Deseja continuar? 1 = sim 2 = nï¿½o");
 			resp = ler.nextInt();
 		} while (resp == 1);
+		ler.close();
 	}
 }

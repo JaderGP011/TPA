@@ -1,4 +1,4 @@
-package lacoRepeticão;
+
 public class numero {
 	public static void main(String[] args) {
 		 int i = 0;
