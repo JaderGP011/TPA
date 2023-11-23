@@ -8,13 +8,13 @@ public class ex1 {
 		a = new int[TAM];
 		b = new int[TAM];
 		for (int i=0; i<TAM; i++) {
-			System.out.println("Diga o " + (i+1) + "° valor de a");
+			System.out.println("Diga o " + (i+1) + "Â° valor de a");
 			a[i] = in.nextInt();
 			b[i] = a[i] * a[i];			
 		}
 		System.out.println("");
 		for (int i=0; i<TAM; i++) {
-			System.out.println("O " + (i+1) + " valor de b é: " + b[i]);
+			System.out.println("O " + (i+1) + " valor de b Ã©: " + b[i]);
 		}
 		in.close();
 	}
